@@ -166,27 +166,3 @@
     max-width: none;
   }
 }
-
-@media (min-width: 1501px) {
-  .hero__content {
-    min-height: 78vh;
-    min-height: 78svh;
-    padding: 20rem 10rem 3rem;
-  }
-
-  .hero__text {
-    width: 43%;
-  }
-
-  #hero h1 {
-    font-size: 6.4rem;
-  }
-
-  .hero__content p {
-    font-size: 2.3rem;
-  }
-
-  .hero__bottom h3 {
-    font-size: 2.8rem;
-  }
-}

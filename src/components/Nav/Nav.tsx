@@ -5,7 +5,10 @@ import ButtonLink from "../ButtonLink/ButtonLink";
 export default function Nav(): JSX.Element {
   return (
     <nav>
-      <ul>
+      <a className="nav__logo" href="#hero">
+        {/* Your logo image goes here */}
+      </a>
+      <ul className="nav__links">
         <li>
           <a href="#hero">Inicio</a>
         </li>
@@ -25,9 +28,11 @@ export default function Nav(): JSX.Element {
           <a href="#contact">Contacto</a>
         </li>
       </ul>
-      <ButtonLink href="#contacto" variant="primary">
-        Reserva tu mesa
-      </ButtonLink>
+      <div className="nav__actions">
+        <ButtonLink href="#contacto" variant="primary">
+          Reserva tu mesa
+        </ButtonLink>
+      </div>
     </nav>
   );
 }
