@@ -36,7 +36,6 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300;
   font-family: var(--playfair-display);
 }
 
@@ -85,7 +84,7 @@ li {
   margin-top: 0;
   font-size: 18px;
   max-width: 600px;
-  color: var(--text-color-normal);
+  color: var(--color-text);
 }
 
 p,
@@ -99,7 +98,12 @@ a {
   display: block;
   height: 2px;
   width: 50px;
-  background-color: var(--accent-color);
+  background-color: var(--color-accent);
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.center-line {
+  margin-left: auto;
+  margin-right: auto;
 }
