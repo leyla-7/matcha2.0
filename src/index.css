@@ -1,0 +1,105 @@
+:root {
+  --color-text: #2b2b2b;
+  --color-text-muted: #c9cdd200;
+  --color-text-transparent: #c9cdd254;
+
+  --color-accent: #5e7f4e;
+  --color-accent-hover: #a3c585;
+
+  --color-bg: #f7f7f5;
+  --color-bg-muted: #efe6d8;
+
+  --noto-serif: "Noto Serif", serif;
+  --playfair-display: "Playfair Display", serif;
+
+  --base-font-size: 62.5%;
+}
+
+html {
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: var(--color-bg-muted);
+  overflow-x: hidden;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-family: var(--playfair-display);
+}
+
+h1,
+h2,
+h3,
+.cursive-noto,
+.cursive {
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  color: var(--color-accent);
+}
+
+h2,
+h3 {
+  font-size: 28px;
+}
+
+h1 {
+  font-size: 64px;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  color: var(--color-text);
+}
+
+.cursive {
+  font-family: var(--playfair-display);
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.cursive-noto {
+  font-family: var(--noto-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+p,
+li {
+  margin-top: 0;
+  font-size: 18px;
+  max-width: 600px;
+  color: var(--text-color-normal);
+}
+
+p,
+span,
+li,
+a {
+  font-family: var(--noto-serif);
+}
+
+.div-line {
+  display: block;
+  height: 2px;
+  width: 50px;
+  background-color: var(--accent-color);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
