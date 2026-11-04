@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./components/Hero/Hero";
 import Nav from "./components/Nav/Nav";
 import About from "./components/About/About";
+import Matcha from "./components/Matcha/Matcha";
 
 export default function App(): JSX.Element {
   return (
@@ -13,6 +14,7 @@ export default function App(): JSX.Element {
       <main>
         <Hero />
         <About />
+        <Matcha />
       </main>
     </div>
   );

@@ -98,17 +98,14 @@
 
 @media (min-width: 900px) {
   #hero {
-    min-height: 100vh;
     min-height: 100svh;
-
     display: flex;
     flex-direction: column;
   }
 
   .hero__content {
-    min-height: 74vh;
-    min-height: 74svh;
-    padding: 13rem 6rem 2rem;
+    min-height: 82svh;
+    padding: clamp(14rem, 12vw, 21rem) clamp(6rem, 5.2vw, 10rem) 3rem;
 
     background-position: right center;
   }
@@ -118,19 +115,23 @@
   }
 
   .hero__text {
-    width: 52%;
-    max-width: 64rem;
+    width: 42%;
+    max-width: none;
     text-align: left;
   }
 
   #hero h1 {
-    font-size: 4.8rem;
+    font-size: clamp(3.6rem, 3.3vw, 5.5rem);
+    line-height: 1.1;
+    letter-spacing: 0.1rem;
   }
 
   .hero__content p {
-    font-size: 1.9rem;
+    font-size: clamp(1.9rem, 1.25vw, 2.3rem);
+    line-height: 1.45;
     margin-left: 0;
     margin-right: 0;
+    max-width: 52rem;
   }
 
   .hero__text .div-line {
@@ -138,31 +139,35 @@
     margin-right: 0;
   }
 
-  .hero__bottom {
-    flex: 1;
-    padding: 1.5rem 2rem 2.5rem;
-  }
-
-  .hero__bottom h3 {
-    width: 50%;
-    font-size: 2.2rem;
-  }
-
-  .hero__bottom .center-line {
-    margin-top: 4rem;
-  }
-
   .hero__actions {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.4rem;
-    margin-top: 2rem;
+    gap: clamp(1.4rem, 1.4vw, 2.8rem);
+    margin-top: 0;
   }
 
   .hero__actions .my-button {
     width: auto;
     max-width: none;
+    font-size: clamp(1.4rem, 1vw, 1.7rem);
+    padding: clamp(1rem, 1vw, 1.5rem) clamp(2.2rem, 3vw, 5rem);
+  }
+
+  .hero__bottom {
+    flex: 1;
+    min-height: 0;
+    padding: 2.5rem 2rem 2rem;
+  }
+
+  .hero__bottom h3 {
+    width: 50%;
+    font-size: 2.2rem;
+    line-height: 1.25;
+  }
+
+  .hero__bottom .center-line {
+    margin: 3rem auto 0;
   }
 }

@@ -1,12 +1,13 @@
 import type { JSX } from "react";
 import "./Nav.css";
 import ButtonLink from "../ButtonLink/ButtonLink";
+import logo from "../../assets/images/logo2.png";
 
 export default function Nav(): JSX.Element {
   return (
     <nav>
       <a className="nav__logo" href="#hero">
-        {/* Your logo image goes here */}
+        <img src={logo} alt="Logotipo" />
       </a>
       <ul className="nav__links">
         <li>
