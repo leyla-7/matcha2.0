@@ -82,24 +82,36 @@
     grid-column: span 2;
   }
 
+  .matcha__grid__top:first-child {
+    align-self: center;
+  }
+
   .matcha__grid__top:first-child h1 {
     font-size: clamp(3.6rem, 3vw, 5.5rem);
   }
 
   .matcha__grid > img {
+    width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
-    margin-top: 6rem;
+    object-fit: cover;
+
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .matcha__grid__bottom-one,
+  .matcha__grid__bottom-two {
+    align-self: start;
+    grid-row: 2;
   }
 
   .matcha__grid__bottom-one {
     grid-column: 3 / span 3;
-    grid-row: 2;
   }
 
   .matcha__grid__bottom-two {
     grid-column: 6 / span 3;
-    grid-row: 2;
     margin-top: 0;
   }
 
@@ -109,7 +121,7 @@
   }
 
   .matcha__grid p {
-    font-size: clamp(1.5rem, 1vw, 1.8rem);
+    font-size: clamp(1.8rem, 1.15vw, 2.1rem);
     line-height: 1.45;
   }
 }
