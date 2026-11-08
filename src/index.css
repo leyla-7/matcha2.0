@@ -18,6 +18,8 @@
 html {
   font-size: var(--base-font-size);
   scroll-behavior: smooth;
+
+  scrollbar-color: var(--color-accent) var(--color-bg-muted);
 }
 
 body {
@@ -107,4 +109,10 @@ a {
 .center-line {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
