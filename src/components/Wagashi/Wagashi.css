@@ -1,0 +1,114 @@
+#wagashi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6rem 2rem;
+
+  background-color: var(--color-bg);
+}
+
+#wagashi__content {
+  width: 100%;
+  min-width: 0;
+  text-align: center;
+}
+
+#wagashi__content h1 {
+  font-size: 3.8rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+#wagashi__content .div-line {
+  margin: 3rem auto;
+}
+
+#wagashi__content p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  max-width: none;
+  margin: 0;
+}
+
+#wagashi__content h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 400;
+
+  margin: 4rem 0 0;
+}
+
+.wagashi__img {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  width: 100%;
+  min-width: 0;
+}
+
+.wagashi__img img {
+  display: block;
+  width: 100%;
+  height: 22rem;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  #wagashi {
+    flex-direction: row;
+    align-items: flex-start;
+
+    gap: clamp(4rem, 6vw, 10rem);
+
+    min-height: calc(100svh - 9rem);
+    padding: 5rem 5vw 8rem;
+
+    scroll-margin-top: 9rem;
+  }
+
+  #wagashi__content {
+    flex: 0 0 38%;
+    text-align: left;
+  }
+
+  #wagashi__content h1 {
+    font-size: clamp(3.6rem, 3.3vw, 5.5rem);
+    line-height: 1.1;
+  }
+
+  #wagashi__content .div-line {
+    margin: 3rem 0;
+  }
+
+  #wagashi__content p {
+    font-size: clamp(1.8rem, 1.2vw, 2.1rem);
+    line-height: 1.5;
+  }
+
+  #wagashi__content h2 {
+    font-size: clamp(3.2rem, 2.5vw, 4.5rem);
+    line-height: 1.1;
+    margin-top: 6rem;
+  }
+
+  .wagashi__img {
+    flex: 1 1 0;
+    width: auto;
+  }
+
+  .wagashi__img img {
+    width: 100%;
+    height: clamp(22rem, 36vh, 36rem);
+
+    object-fit: cover;
+  }
+}
