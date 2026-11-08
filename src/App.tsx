@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Nav from "./components/Nav/Nav";
 import About from "./components/About/About";
 import Matcha from "./components/Matcha/Matcha";
+import Wagashi from "./components/Wagashi/Wagashi";
 
 export default function App(): JSX.Element {
   return (
@@ -15,6 +16,7 @@ export default function App(): JSX.Element {
         <Hero />
         <About />
         <Matcha />
+        <Wagashi />
       </main>
     </div>
   );
