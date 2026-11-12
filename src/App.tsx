@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Matcha from "./components/Matcha/Matcha";
 import Wagashi from "./components/Wagashi/Wagashi";
 import Footer from "./components/Footer/Footer";
+import Tearoom from "./components/Tearoom/Tearoom";
 
 export default function App(): JSX.Element {
   return (
@@ -18,6 +19,7 @@ export default function App(): JSX.Element {
         <About />
         <Matcha />
         <Wagashi />
+        <Tearoom />
       </main>
       <footer>
         <Footer />
