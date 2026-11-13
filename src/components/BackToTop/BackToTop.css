@@ -1,0 +1,30 @@
+.backtotop {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+}
+.backtotop__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--color-accent-hover-transparent);
+  border-radius: 999px;
+  border: none;
+  color: var(--color-accent);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.backtotop:hover {
+  color: var(--color-accent-hover);
+}
+
+@media screen and (min-width: 75rem) {
+  .backtotop {
+    display: none;
+  }
+}

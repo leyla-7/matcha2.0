@@ -108,6 +108,8 @@
     max-width: 136rem;
     margin-inline: auto;
     padding: 3rem 0 4rem;
+    min-height: 100svh;
+    justify-content: center;
   }
 
   .tearoom__main {

@@ -1,16 +1,14 @@
-import type { SubmitEvent, JSX } from "react";
+import { type SubmitEvent, type JSX, useState } from "react";
 import "./Contact.css";
 import Button from "../Button/Button";
 
 export default function Contact(): JSX.Element {
+  const [isMessageVisible, setIsMessageVisible] = useState(false);
   function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const formData = new FormData(event.currentTarget);
-
-    console.log(formData.get("name"));
-    console.log(formData.get("email"));
-    console.log(formData.get("message"));
+    event.currentTarget.reset();
+    setIsMessageVisible(true);
   }
   return (
     <section id="contact">
@@ -44,6 +42,7 @@ export default function Contact(): JSX.Element {
           <label htmlFor="contact-message">Su mensaje:*</label>
           <textarea id="contact-message" name="message" rows={5} required />
         </div>
+        {isMessageVisible && <p role="status">¡Gracias por su mensaje!</p>}
         <Button variant="primary" type="submit">
           Enviar
         </Button>

@@ -64,15 +64,14 @@
 
 @media (min-width: 900px) {
   #wagashi {
-    flex-direction: row;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+    padding-inline: 10rem;
 
-    gap: clamp(4rem, 6vw, 10rem);
+    align-content: center;
+    align-items: start;
 
-    min-height: calc(100svh - 9rem);
-    padding: 5rem 5vw 8rem;
-
-    scroll-margin-top: 9rem;
+    min-height: 100svh;
   }
 
   #wagashi__content {

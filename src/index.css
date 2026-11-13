@@ -5,6 +5,7 @@
 
   --color-accent: #5e7f4e;
   --color-accent-hover: #a3c585;
+  --color-accent-hover-transparent: #a3c58531;
 
   --color-bg: #f7f7f5;
   --color-bg-muted: #efe6d8;
@@ -13,6 +14,7 @@
   --playfair-display: "Playfair Display", serif;
 
   --base-font-size: 62.5%;
+  --nav-offset: 0px;
 }
 
 html {
@@ -20,6 +22,7 @@ html {
   scroll-behavior: smooth;
 
   scrollbar-color: var(--color-accent) var(--color-bg-muted);
+  scroll-padding-top: var(--nav-offset);
 }
 
 body {
@@ -112,6 +115,10 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  :root {
+    --nav-offset: 8rem;
+  }
+
   html {
     scroll-behavior: auto;
   }

@@ -66,7 +66,9 @@
 @media (min-width: 900px) {
   #matcha {
     padding: 3rem 5vw 4rem;
-    scroll-margin-top: 9rem;
+    min-height: 100svh;
+    display: grid;
+    align-content: center;
   }
 
   .matcha__grid {

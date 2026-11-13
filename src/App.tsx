@@ -8,6 +8,7 @@ import Wagashi from "./components/Wagashi/Wagashi";
 import Footer from "./components/Footer/Footer";
 import Tearoom from "./components/Tearoom/Tearoom";
 import Contact from "./components/Contact/Contact";
+import BackToTop from "./components/BackToTop/BackToTop";
 
 export default function App(): JSX.Element {
   return (
@@ -26,6 +27,7 @@ export default function App(): JSX.Element {
       <footer>
         <Footer />
       </footer>
+      <BackToTop />
     </div>
   );
 }
