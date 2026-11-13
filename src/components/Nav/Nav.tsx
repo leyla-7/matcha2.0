@@ -30,7 +30,7 @@ export default function Nav(): JSX.Element {
         </li>
       </ul>
       <div className="nav__actions">
-        <ButtonLink href="#contacto" variant="primary">
+        <ButtonLink href="#contact" variant="primary">
           Reserva tu mesa
         </ButtonLink>
       </div>
