@@ -117,9 +117,8 @@
 @media (min-width: 900px) {
   #contact {
     min-height: calc(100svh - 9rem);
+    scroll-margin-top: 8rem;
     padding: 5rem 5vw 7rem;
-
-    scroll-margin-top: 9rem;
   }
 
   #contact > h1 {

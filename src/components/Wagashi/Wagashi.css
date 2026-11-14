@@ -71,7 +71,8 @@
     align-content: center;
     align-items: start;
 
-    min-height: 100svh;
+    min-height: calc(100svh - 8rem);
+    scroll-margin-top: 8rem;
   }
 
   #wagashi__content {

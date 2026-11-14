@@ -91,7 +91,8 @@
     display: grid;
     place-items: center;
 
-    min-height: 100svh;
+    min-height: calc(100svh - 8rem);
+    scroll-margin-top: 8rem;
     padding: 3rem 4rem;
   }
 

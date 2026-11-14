@@ -108,7 +108,8 @@
     max-width: 136rem;
     margin-inline: auto;
     padding: 3rem 0 4rem;
-    min-height: 100svh;
+    min-height: calc(100svh - 8rem);
+    scroll-margin-top: 8rem;
     justify-content: center;
   }
 
