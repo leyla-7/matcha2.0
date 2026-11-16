@@ -14,11 +14,11 @@ export default function Tearoom(): JSX.Element {
         />
 
         <div className="tearoom__text">
-          <h1>
+          <h2>
             Próximamente
             <br />
             en Valencia
-          </h1>
+          </h2>
 
           <div className="div-line"></div>
 

@@ -1,5 +1,4 @@
 import type { AnchorHTMLAttributes, JSX, ReactNode } from "react";
-import "./ButtonLink.css";
 import "../Button/Button.css";
 
 interface ButtonLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
