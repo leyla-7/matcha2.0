@@ -71,15 +71,21 @@
     padding-inline: 10rem;
 
     align-content: center;
-    align-items: start;
+    align-items: stretch;
 
     min-height: calc(100svh - 8rem);
     scroll-margin-top: 8rem;
   }
 
   #wagashi__content {
-    flex: 0 0 38%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
     text-align: left;
+  }
+
+  .wagashi__intro {
+    align-self: center;
   }
 
   #wagashi__content h2 {
@@ -98,8 +104,8 @@
 
   #wagashi__content h3 {
     font-size: clamp(3.2rem, 2.5vw, 4.5rem);
-    line-height: 1.1;
-    margin-top: 6rem;
+    align-self: center;
+    margin-top: 0;
   }
 
   .wagashi__img {
