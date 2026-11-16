@@ -6,7 +6,12 @@ export default function Tearoom(): JSX.Element {
   return (
     <section id="tearoom">
       <div className="tearoom__main">
-        <img src={tearoom} alt="Moodboard arquitectónico japonés" />
+        <img
+          src={tearoom}
+          alt="Moodboard arquitectónico japonés"
+          loading="lazy"
+          decoding="async"
+        />
 
         <div className="tearoom__text">
           <h1>

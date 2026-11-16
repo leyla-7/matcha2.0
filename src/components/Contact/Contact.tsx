@@ -12,7 +12,7 @@ export default function Contact(): JSX.Element {
   }
   return (
     <section id="contact">
-      <h1>Contacto</h1>
+      <h2>Contacto</h2>
       <p>
         Si deseas más información sobre nuestros productos, estaremos encantados
         de escucharte.

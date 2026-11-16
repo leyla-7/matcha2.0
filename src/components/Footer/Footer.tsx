@@ -6,17 +6,17 @@ export default function Footer(): JSX.Element {
   return (
     <footer>
       <div className="footer__redes">
-        <a href="">
-          <i className="fa-solid fa-envelope"></i>
+        <a href="" aria-label="Email">
+          <i className="fa-solid fa-envelope" aria-hidden="true"></i>
         </a>
-        <a href="">
-          <i className="fa-brands fa-facebook"></i>
+        <a href="" aria-label="Facebook">
+          <i className="fa-brands fa-facebook" aria-hidden="true"></i>
         </a>
-        <a href="">
-          <i className="fa-brands fa-square-instagram"></i>
+        <a href="" aria-label="Instagram">
+          <i className="fa-brands fa-square-instagram" aria-hidden="true"></i>
         </a>
-        <a href="">
-          <i className="fa-brands fa-tiktok"></i>
+        <a href="" aria-label="TikTok">
+          <i className="fa-brands fa-tiktok" aria-hidden="true"></i>
         </a>
       </div>
       <a href="">Aviso legal</a>

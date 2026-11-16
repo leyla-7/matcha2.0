@@ -21,7 +21,7 @@
   min-width: 0;
 }
 
-.matcha__grid__top:first-child h1 {
+.matcha__grid__top:first-child h2 {
   font-size: 4rem;
   line-height: 1.08;
 }
@@ -47,8 +47,8 @@
   min-width: 0;
 }
 
-.matcha__grid__bottom-one h2,
-.matcha__grid__bottom-two h2 {
+.matcha__grid__bottom-one h3,
+.matcha__grid__bottom-two h3 {
   font-size: 3.4rem;
   line-height: 1.15;
   margin-bottom: 0;
@@ -89,7 +89,7 @@
     align-self: center;
   }
 
-  .matcha__grid__top:first-child h1 {
+  .matcha__grid__top:first-child h2 {
     font-size: clamp(3.6rem, 3vw, 5.5rem);
   }
 
@@ -118,8 +118,8 @@
     margin-top: 0;
   }
 
-  .matcha__grid__bottom-one h2,
-  .matcha__grid__bottom-two h2 {
+  .matcha__grid__bottom-one h3,
+  .matcha__grid__bottom-two h3 {
     font-size: clamp(2.6rem, 1.8vw, 3.2rem);
   }
 

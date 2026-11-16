@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-#wagashi__content h1 {
+#wagashi__content h2 {
   font-size: 3.8rem;
   line-height: 1.1;
   margin-bottom: 2rem;
@@ -34,12 +34,13 @@
   margin: 0;
 }
 
-#wagashi__content h2 {
+#wagashi__content h3 {
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 400;
 
   margin: 4rem 0 0;
+  color: var(--color-accent);
 }
 
 .wagashi__img {
@@ -65,7 +66,8 @@
 @media (min-width: 900px) {
   #wagashi {
     display: grid;
-    grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+    grid-template-columns: minmax(0, 45fr) minmax(0, 55fr);
+    gap: 12rem;
     padding-inline: 10rem;
 
     align-content: center;
@@ -80,7 +82,7 @@
     text-align: left;
   }
 
-  #wagashi__content h1 {
+  #wagashi__content h2 {
     font-size: clamp(3.6rem, 3.3vw, 5.5rem);
     line-height: 1.1;
   }
@@ -94,7 +96,7 @@
     line-height: 1.5;
   }
 
-  #wagashi__content h2 {
+  #wagashi__content h3 {
     font-size: clamp(3.2rem, 2.5vw, 4.5rem);
     line-height: 1.1;
     margin-top: 6rem;

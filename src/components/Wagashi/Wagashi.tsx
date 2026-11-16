@@ -7,9 +7,9 @@ export default function Wagashi(): JSX.Element {
   return (
     <section id="wagashi">
       <div id="wagashi__content">
-        <h1>
+        <h2>
           Wagashi: <br /> dulces japoneses artesanales
-        </h1>
+        </h2>
         <div className="div-line"></div>
         <p>
           Los wagashi son dulces tradicionales japoneses elaborados con
@@ -19,14 +19,24 @@ export default function Wagashi(): JSX.Element {
           acompañamiento perfecto para el matcha.
         </p>
 
-        <h2 className="cursive">
+        <h3 className="cursive">
           Una combinación que une estética, tradición y equilibrio.
-        </h2>
+        </h3>
       </div>
 
       <div className="wagashi__img">
-        <img src={wagashiOne} alt="Wagashi individuales"></img>
-        <img src={wagashiTwo} alt="Wagashi junto al matcha"></img>
+        <img
+          src={wagashiOne}
+          alt="Wagashi individuales"
+          loading="lazy"
+          decoding="async"
+        ></img>
+        <img
+          src={wagashiTwo}
+          alt="Wagashi junto al matcha"
+          loading="lazy"
+          decoding="async"
+        ></img>
       </div>
     </section>
   );

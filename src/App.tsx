@@ -24,9 +24,7 @@ export default function App(): JSX.Element {
         <Tearoom />
         <Contact />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
       <BackToTop />
     </div>
   );
