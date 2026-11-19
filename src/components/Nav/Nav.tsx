@@ -23,11 +23,11 @@ export default function Nav(): JSX.Element {
           Reserva tu mesa
         </ButtonLink>
       </div>
-      <div className="nav__hamburger" onClick={collapseNav}>
+      <button type="button" className="nav__hamburger" onClick={collapseNav}>
         <div className="nav__ham"></div>
         <div className="nav__ham"></div>
         <div className="nav__ham"></div>
-      </div>
+      </button>
       <ul
         className={`${isNavCollapsed ? "nav__links__collapsed" : "nav__links__displayed"}`}
       >
