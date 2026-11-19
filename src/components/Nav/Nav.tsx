@@ -29,7 +29,7 @@ export default function Nav(): JSX.Element {
         <div className="nav__ham"></div>
       </button>
       <ul
-        className={`${isNavCollapsed ? "nav__links__collapsed" : "nav__links__displayed"}`}
+        className={`${isNavCollapsed ? "nav__links__collapsed" : "nav__links__displayed"} nav__links`}
       >
         <li>
           <a href="#hero">Inicio</a>
