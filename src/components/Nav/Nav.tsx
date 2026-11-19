@@ -14,7 +14,7 @@ export default function Nav(): JSX.Element {
   }
   return (
     <nav>
-      <a className="nav__logo" href="#hero">
+      <a className="nav__logo" href="#top">
         <img src={logo} alt="Logotipo" />
       </a>
 
