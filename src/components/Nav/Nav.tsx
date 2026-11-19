@@ -1,15 +1,36 @@
-import type { JSX } from "react";
+import { useState, type JSX } from "react";
 import "./Nav.css";
 import ButtonLink from "../ButtonLink/ButtonLink";
-import logo from "../../assets/images/logo2.png";
+import logo from "../../assets/images/logo_icon.png";
 
 export default function Nav(): JSX.Element {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  function collapseNav() {
+    if (isNavCollapsed) {
+      setIsNavCollapsed(false);
+    } else {
+      setIsNavCollapsed(true);
+    }
+  }
   return (
     <nav>
       <a className="nav__logo" href="#hero">
         <img src={logo} alt="Logotipo" />
       </a>
-      <ul className="nav__links">
+
+      <div className="nav__actions">
+        <ButtonLink href="#contact" variant="primary">
+          Reserva tu mesa
+        </ButtonLink>
+      </div>
+      <div className="nav__hamburger" onClick={collapseNav}>
+        <div className="nav__ham"></div>
+        <div className="nav__ham"></div>
+        <div className="nav__ham"></div>
+      </div>
+      <ul
+        className={`${isNavCollapsed ? "nav__links__collapsed" : "nav__links__displayed"}`}
+      >
         <li>
           <a href="#hero">Inicio</a>
         </li>
@@ -29,11 +50,6 @@ export default function Nav(): JSX.Element {
           <a href="#contact">Contacto</a>
         </li>
       </ul>
-      <div className="nav__actions">
-        <ButtonLink href="#contact" variant="primary">
-          Reserva tu mesa
-        </ButtonLink>
-      </div>
     </nav>
   );
 }

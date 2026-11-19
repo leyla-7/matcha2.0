@@ -1,7 +1,9 @@
 nav {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 1.2rem;
 
   width: 100%;
@@ -9,6 +11,20 @@ nav {
   box-sizing: border-box;
 
   background-color: var(--color-bg-muted);
+}
+
+.nav__hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.nav__ham {
+  display: block;
+  height: 4px;
+  width: 40px;
+  background-color: var(--color-accent);
 }
 
 .nav__logo {
@@ -24,24 +40,35 @@ nav {
   object-fit: contain;
 }
 
-.nav__links {
+.nav__links__collapsed {
+  display: none;
+}
+
+.nav__links__displayed {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+
+  background-color: var(--color-bg-muted-transparent);
+  padding: 15px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem 1rem;
+  gap: 3rem 1rem;
 
   margin: 0;
-  padding: 0;
   list-style: none;
 }
 
-.nav__links a,
-.nav__links a:visited {
+.nav__links__displayed a,
+.nav__links__displayed a:visited {
   display: block;
 
   font-family: var(--noto-serif);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.1rem;
@@ -52,16 +79,16 @@ nav {
   transition: color 0.2s ease;
 }
 
-.nav__links a:hover {
+.nav__links__displayed a:hover {
   color: var(--color-accent);
 }
 
-.nav__links a:focus-visible {
+.nav__links__displayed a:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
 
-.nav__links li {
+.nav__links__displayed li {
   list-style: none;
   margin: 0;
 }
@@ -104,6 +131,7 @@ nav {
   .nav__logo {
     flex: 0 0 auto;
     width: clamp(7rem, 9vw, 14rem);
+    order: 1;
   }
 
   .nav__logo img {
@@ -112,24 +140,38 @@ nav {
     height: auto;
     max-height: 6.8rem;
     object-fit: contain;
+    content: url("../../assets/images/logo2.png");
   }
 
-  .nav__links {
+  .nav__hamburger {
+    display: none;
+  }
+
+  .nav__links__displayed {
+    position: static;
+    top: auto;
+    right: auto;
+
     flex: 1 1 auto;
+    flex-direction: row;
     min-width: 0;
     justify-content: center;
     flex-wrap: nowrap;
     gap: clamp(1rem, 1.8vw, 3rem);
+    order: 2;
+    background-color: transparent;
+    padding: 0;
   }
 
-  .nav__links a,
-  .nav__links a:visited {
+  .nav__links__displayed a,
+  .nav__links__displayed a:visited {
     font-size: clamp(1rem, 0.9vw, 1.4rem);
     white-space: nowrap;
   }
 
   .nav__actions {
     flex: 0 0 auto;
+    order: 3;
   }
 
   .nav__actions .my-button {

@@ -5,10 +5,12 @@
   z-index: 10;
   display: grid;
   place-items: center;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
 }
 .backtotop__icon {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 5rem;
+  height: 5rem;
   background: var(--color-accent-hover-transparent);
   border-radius: 999px;
   border: none;
